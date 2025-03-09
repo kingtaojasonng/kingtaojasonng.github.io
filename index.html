@@ -1,65 +1,201 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
 <html lang="en">
 <head>
+  <title>King Tao Jason Ng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
-<h1>King Tao Jason Ng</h1>
-<title>King Tao Jason Ng</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .image-frame {
+            display: inline-block;
+            padding: 1px;
+            background-color: white;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        .image-frame img {
+            width: 300px; /* Adjust the size as needed */
+            height: auto;
+            display: block;
+            border-radius: 5px; /* Slightly rounded image corners */
+        }
+    </style>
+
 </head>
 <body>
-<nav role="navigation">
-  <ul class="navibar">
-    <li class="navibar"><a href="index.html" title="Home">Home</a></li>
-    <li class="navibar"><a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&hl=en" title="Publications">Publications</a></li>
-    <li class="navibar"><a href="papers/resume.pdf" title="Curriculum Vitae">Curriculum Vitae</a></li>
-  </ul>
-</nav>
-<header role="banner"><br/>
-<a>
-<img src="images/profile.jpg">
-</a>
-</header>
 
-<h2>About Me</h2>
-<main role="main">
-  <article role="article">
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">Home</a></li>
+                  <li><a href="#publications">Publications</a></li>
+				  <li><a href="#ideas">Ideas & Inspirations</a></li> 
+				  <li><a href="resume/resume.pdf">CV</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
   
-  <p>
-    Currently, I am a Senior Data Scientist at ASIC working on machine learning and Natural Language Processing (NLP) applications.
-  </p>
+  <!-- Page Content -->
+    <div class="container">
 
-  <p>
-    I recently completed my Master of Research program at Macquarie University under the guidance of <a href="http://web.science.mq.edu.au/~diego/">Diego Molla-Aliod</a>, <a href="http://web.science.mq.edu.au/~rolfs/">Rolf Schwitter</a> and <a href="https://researchers.mq.edu.au/en/persons/houying-zhu">Houying Zhu</a>. My <a href="papers/causal_direction.pdf">dissertation</a> focuses on NLP.
-  </p>
+        <div class="row">
 
-  <p>
-    Prior to this, I earned a Master of Data Science from the University of Sydney, working closely with <a href="https://www.linkedin.com/in/roman-marchant/">Roman Marchant</a>, <a href="https://www.linkedin.com/in/sunchao/?originalSubdomain=au">Chao Sun</a>, and <a href="https://www.linkedin.com/in/philhenville/">Phil Henville</a> on my <a href="papers/academic_capability_mapping.pdf">dissertation</a> project.
-  </p>
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-4">
+                <div style="font-family: 'Fira Sans', sans-serif; font-size: 32px;"><b>King Tao Jason Ng</b></div><br>
+                
+                <div class="image-frame">
+                    <img src="images/jason.jpg" alt="My Personal Image">
+                </div>
 
-  <p>
-    Additionally, I hold a Master of Economics from the University of Sydney. Alongside this, I completed a Master's in Information Technology and a Bachelor's in Computer Science, both achieved at the University of New South Wales.
-  </p>
+                <p><b>jason.kingtao.ng@gmail.com</b><br>
 
-  </article>
+                <p>Senior Data Scientist<br>
 
-  <h2>Interests</h2>
+                </p>
+            <!--</div>-->
 
-  <article role="article">
-    <p>Natural Language Processing and Bayesian Statistics</p>
-  </article>
+            <!-- Links on the Sidebar -->
+            <!--<div class="col-md-4" style="margin-top:2%">-->
+              <dd><a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&hl=en">Google Scholar</a></dd> 
+              <!--<dd><a href="#">Twitter</a></dd>-->
+              <dd><a href="https://www.linkedin.com/in/jasonkng/">LinkedIn</a></dd>
+            </div>
 
-  <h2>Contact Me</h2>
+            <!-- Entries Column -->
+            <div class="col-md-8" style="height: 500vh;">
+                
+                <!-- Main Image -->
+                <img class="img-responsive" src="photo.gif" alt=""><br>
+                
+                <div style="margin-top:3%; text-align:justify;">
+                    <h2 id="home">About Me</h2>
+                    <p><b>Experience</b><br>
 
-  <article role="article">
-    <p>You can email me to <a href="mailto:jason.kingtao.ng@gmail.com">jason.kingtao.ng@gmail.com</a>. Alternatively, you can contact me by <a href="https://www.linkedin.com/in/jasonkng/">Linkedin</a>.</p>
-  </article>
+                    <p>I am a Senior Data Scientist at <a href="https://asic.gov.au">ASIC</a>, focusing on machine learning and natural language processing applications. Previously, I was a Senior Analytics Platform Owner at ASIC, managing Databricks, RStudio Servers, Python Servers, and the Data Science Lab. Before that, as a Data Scientist at ASIC, I led the development and implementation of NLP Prospectuses, leveraging NLP to extract insights and enhance document analysis. As a Data Scientist at the <a href="https://www.sydney.edu.au">University of Sydney's</a> <a href="https://www.sydney.edu.au/engineering/schools/school-computer-science.html">School of Computer Science</a>, I developed a Researcher Collaboration Recommendation System. Before becoming a data scientist, I worked as a Business Analyst at <a href="https://www.tabcorp.com.au">Tabcorp</a>, overseeing the Customer Loyalty Project, and as a Software Engineer at <a href="https://www.aristocrat.com">Aristocrat</a>, developing slot machine applications.</p>
 
-</main>
+                    <p><b>Education</b><br>
 
-<footer role="contentinfo">
-  <div class="content-footer">
+					<p>I completed a Master of Research at <a href="https://www.mq.edu.au">Macquarie University</a> under the supervision of <a href="http://web.science.mq.edu.au/~diego/">Diego Molla-Aliod</a>, <a href="http://web.science.mq.edu.au/~rolfs/">Rolf Schwitter</a>, and <a href="https://researchers.mq.edu.au/en/persons/houying-zhu">Houying Zhu</a>, with a <a href="https://figshare.mq.edu.au/ndownloader/files/44817199">dissertation</a> focused on Bayesian statistics and natural language processing. Prior to this, I earned a Master of Data Science from the University of Sydney, where I collaborated with <a href="https://profiles.uts.edu.au/Roman.Marchant">Roman Marchant</a>, <a href="https://www.linkedin.com/in/sunchao/?originalSubdomain=au">Chao Sun</a>, and <a href="https://www.linkedin.com/in/philhenville/">Phil Henville</a> on my research <a href="papers/academic_capability_mapping.pdf">project</a>. I also hold a Master of Economics from the University of Sydney, as well as a Master’s in Information Technology and a Bachelor’s in Computer Science from the <a href="https://www.unsw.edu.au">University of New South Wales</a>.</p>
+
+                    <p><b>Research</b><br>
+                    <p>My research primarily focuses on Bayesian statistics as a framework for understanding causality, with a particular emphasis on unstructured data. I am interested in developing probabilistic models that can infer causal relationships.</p>
+                    
+                    <p><b>Who am I</b><br>
+                    <p>I was born and raised in Hong Kong, where I spent the first 18 years of my life. After high school, I came to Australia for my studies, initially thinking it would be a short stay. But as time passed, I found a full-time job, and I decided to settle in Australia. I attended St. Margaret’s College in Hong Kong, though the school closed down after I left. I attended <a href="https://www.kcis.edu.hk/">Kiangsu and Chekiang Primary School</a>, as well as <a href="https://www.npgps.edu.hk">North Point Government Primary School</a>. I have heard, though it is not entirely confirmed, that <a href="https://en.wikipedia.org/wiki/Jacky_Cheung">Jacky Cheung</a> is an alumnus of North Point Government Primary School.</p>
+
+                    <div style="height: 50vh;"></div>
+                </div>
+            <!--/div>-->
+            
+            <!-- Publications -->
+            <!--<div class="col-md-8" style="height: 100vh;">-->
+                <h2 id="publications">Publications</h2>
+                
+                <strong>Conference Proceedings</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here"> 
+                    <strong>King Tao Jason Ng</strong> & Diego Moll&aacute;. Exploring Causal Directions through Word Occurrences: Semi-supervised Bayesian Classification Framework. The 21st Annual Workshop of the Australasian Language Technology Association, Melbourne, VIC, Australia, November 29 - December 1, 2023. [<a href="papers/2023.alta-1.4.pdf" target="_blank">Paper</a>] 
+                </li>
+                <li class="paper" words="add, your, keywords, here"> 
+                    Chao Sun, <strong>King Tao Jason Ng</strong>, Philip Henville & Roman Marchant. Hierarchical Word Mover Distance for Collaboration Recommender System. The 16th Australasian Data Mining Conference, AusDM 2018, Bathurst, NSW, Australia, November 28 - 30, 2018, Revised Selected Papers. [<a href="https://link.springer.com/chapter/10.1007/978-981-13-6661-1_23" target="_blank">Paper</a>] 
+                </li>
+                </ul>
+                <div style="height: 100vh;"></div>
+                <!--
+                <strong>Peer-reviewed</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
+                </ul>
+            
+                <strong>Technical Reports</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
+                </ul>
+                -->
+            <!--</div>-->
+
+            <!-- Publications -->
+            <!--<div class="col-md-8" style="height: 100vh;">-->
+                <h2 id="ideas">Ideas & Inspirations</h2>
+                <strong>Product Management</strong><br/>
+                Have you ever developed an application requested by the business, only to find it never used after implementation? If so, I would recommend the following books to read:
+                <ul> 
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/INSPIRED-Create-Tech-Products-Customers-ebook/dp/B077NRB36N">Inspired: How to Create Tech Products Customers Love</a> by Marty Cagan</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Lean-Startup-Eric-Ries/dp/0307887898">The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a> by Eric Ries</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Crossing-Chasm-3rd-Geoffrey-Moore/dp/0062292986">Crossing the Chasm, 3rd Edition: Marketing and Selling Disruptive Products to Mainstream Customers</a> by Geoffrey A Moore</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Escaping-Build-Trap-Melissa-Perri/dp/149197379X">Escaping the Build Trap: How Effective Product Management Creates Real Value</a> by Melissa Perri</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Design-Everyday-Things-Revised-Expanded/dp/0465050654">The Design of Everyday Things</a> by Don Norman</li>
+                </ul>
+                <strong>Bayesian Statistics</strong><br/>
+                I see myself primarily as a computer scientist, with some experience in data science, but not as a statistician. However, learning Bayesian statistics, from my perspective, can be challenging since many resources are geared toward trained statisticians. I’ve found the following materials to be particularly accessible:
+                <ul>
+                <li class="paper" words="add, your, keywords, here">I found this <a href="https://www.youtube.com/watch?v=GEFxFVESQXc">YouTube</a> video explains very clearly between Bayesian and Frequentist.</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Students-Guide-Bayesian-Statistics/dp/1473916364">A Student's Guide to Bayesian Statistics</a> by Ben Lambert. The author has created a series of <a href="https://www.youtube.com/watch?v=P_og8H-VkIY&list=PLwJRxp3blEvZ8AKMXOy0fc0cqT61GsKCG">YouTube</a> videos that complement the content of the book.</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Doing-Bayesian-Data-Analysis-Tutorial/dp/0124058884">Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan </a> by John Kruschke.</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Statistical-Rethinking-Bayesian-Course-Examples/dp/1482253445">Statistical Rethinking: A Bayesian Course with Examples in R and Stan </a> by Richard McElreath.</li>
+                </ul>
+                <strong>Coastal Walks</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">If you are looking to explore Sydney on foot, I highly recommend <a href="https://www.amazon.com.au/Sydneys-Best-Harbour-Coastal-Walks/dp/1925868621">Sydney's Best Harbour & Coastal Walks</a> by Katrina O'Brien, which features nearly 40 scenic trails.</li>
+                </ul>
+                <strong>Bias</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">When I first learned statistics, I encountered the concept of bias, which has a precise mathematical definition. However, textbooks often mention terms like experiment bias or omitted variable bias without fully explaining how they arise. <a href="https://www.amazon.com.au/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a> by Daniel Kahneman delves into the psychological and cognitive processes behind bias, offering a deeper understanding of why it occurs.</li>
+                </ul>
+                <strong>Job Hunters</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">I have transitioned through various careers from software engineer and database administrator to data scientist. <a href="https://www.amazon.com.au/What-Color-Your-Parachute-2021-ebook/dp/B08681HM8W/ref=sr_1_6?crid=1DHKTI7NDHCUS&dib=eyJ2IjoiMSJ9.2GcLP9v-CNDdyu3NY7k_602bsZy9ThXXBkbsu93a_QMAoCOtelfKEKQdep1z_RoLDXdpCGAGezKMTImVMpLuPz-26L0LSjM8VjXa8e-vXibeVoWwv2Zvc2UEuymhS6MzAxBU_Jw2W-LT2DXpZXNI70m0fW19gcLUpyeftbftbq4625zC3wSlNfrQrmt4VAh24c3ueMHrwSwt4QLbbdmAKZ-Ms4sHhG5IwHxrqQAuZ7o.l6GuGHJJsZdY3pJ1Qlf7k2orI9eomo--cQnRL7j912s&dib_tag=se&keywords=what+colour+is+your+parachute&qid=1741473860&s=books&sprefix=What+colour+is+your%2Cstripbooks%2C308&sr=1-6">What Color Is Your Parachute?</a> by Richard N. Bolles provides valuable insights for anyone looking to make a career change.</li>
+                </ul>
+                <strong>Psychology</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">I'm not a psychologist, but I found <a href="https://www.amazon.com.au/Courage-Disliked-Japanese-phenomenon-happiness-ebook/dp/B06XSGNN61">The Courage to be Disliked: The Japanese phenomenon that shows you how to free yourself, change your life and achieve real happiness</a> by Ichiro Kishimi and Fumitake Koga to be incredibly practical. It highlights how our perspective shapes our happiness and how changing the way we see the world can transform our lives.</li>
+                </ul>
+                <strong>Life Skills</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">Communication, influence, and persuasion are essential skills, yet they are rarely taught in schools. <a href="https://www.amazon.com.au/How-Win-Friends-Influence-People/dp/0671027034">How to Win Friends & Influence People </a> by Dale Carnegie offers valuable insights to help you develop them.</li>
+                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/7-Habits-Highly-Effective-People/dp/0743269519">7 Habits of Highly Effective People</a> by Stephen R Covey is a must-read for personal growth. If you could pick just one book from the list, this should be it.</li>
+                </ul>
+            </div>
+
+        </div>
     Copyright &copy; 2019 - <script>document.write(new Date().getFullYear())</script> by King Tao Jason Ng
-  </div>
-</footer>
+    </div>
+    <!-- /.container -->
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
 </body>
+
 </html>
