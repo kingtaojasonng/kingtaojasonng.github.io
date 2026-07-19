@@ -4,7 +4,6 @@
     Released under the Simplified BSD License/FreeBSD (2-clause) License.
     https://github.com/mavroudisv/plain-academic
 -->
-
 <html lang="en">
 <head>
   <title>King Tao Jason Ng</title>
@@ -14,7 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,6 +34,29 @@
             height: auto;
             display: block;
             border-radius: 5px; /* Slightly rounded image corners */
+        }
+
+        a i {
+          margin-right: 8px; 
+        }
+
+        /* Optional: If you want to give the email icon a specific color */
+        .fa-envelope {
+          color: #ea4335; /* A classic email/Gmail red */
+        }
+
+        .fa-google-scholar {
+            color: #4285F4;
+        }
+
+        /* GitHub Logo (Sleek Dark Gray/Black) */
+        .fa-github {
+            color: #24292e;
+        }
+
+        /* LinkedIn Logo (Official LinkedIn Blue) */
+        .fa-linkedin {
+            color: #0077B5;
         }
     </style>
 
@@ -78,19 +100,30 @@
                 <div class="image-frame">
                     <img src="images/jason.jpg" alt="My Personal Image">
                 </div>
+                <!--</div>-->
 
-                <p><b>jason.kingtao.ng@gmail.com</b><br>
-
-                <p>Senior Data Scientist<br>
-
-                </p>
-            <!--</div>-->
-
-            <!-- Links on the Sidebar -->
-            <!--<div class="col-md-4" style="margin-top:2%">-->
-              <dd><a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&hl=en">Google Scholar</a></dd> 
-              <dd><a href="https://github.com/kingtaojasonng">Github</a></dd>
-              <dd><a href="https://www.linkedin.com/in/jasonkng/">LinkedIn</a></dd>
+                <!-- Links on the Sidebar -->
+                <!--<div class="col-md-4" style="margin-top:2%">-->
+                <dd>
+                    <a href="mailto:jason.kingtao.ng@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> jason.kingtao.ng@gmail.com
+                    </a>
+                </dd>
+                <dd>
+                    <a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&amp;hl=en">
+                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
+                    </a>
+                </dd> 
+                <dd>
+                    <a href="https://github.com/kingtaojasonng">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </dd>
+                <dd>
+                    <a href="https://www.linkedin.com/in/jasonkng/">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </dd>
             </div>
 
             <!-- Entries Column -->
@@ -101,17 +134,20 @@
                 
                 <div style="margin-top:3%; text-align:justify;">
                     <h2 id="home">About Me</h2>
+
+                    <p>Welcome! I am a Senior Data Scientist at <a href="https://asic.gov.au">ASIC</a>, specialising in machine learning and natural language processing applications.</p>
+
+                    <p>My research primarily focuses on Bayesian statistics as a framework for understanding causality, with a particular emphasis on unstructured data. I am interested in developing probabilistic models that can infer causal relationships.</p>
+
                     <p><b>Experience</b><br>
 
-                    <p>I am a Senior Data Scientist at <a href="https://asic.gov.au">ASIC</a>, specialising in machine learning and natural language processing applications. Previously, I served as Senior Analytics Platform Owner, where I managed and optimised enterprise data science platforms including Databricks, RStudio Server, Python environments, and the Data Science Lab to support scalable analytics and ML delivery. Earlier in my career at ASIC, I worked as a Data Scientist, leading the development and implementation of NLP-based prospectus analysis solutions to extract insights and enhance large-scale document processing. Prior to this, I was a Data Scientist at the <a href="https://www.sydney.edu.au">University of Sydney's</a> <a href="https://www.sydney.edu.au/engineering/schools/school-computer-science.html">School of Computer Science</a>, where I developed a researcher collaboration recommendation system.
-                    Before transitioning into data science, I gained strong technical and business foundations as a Business Analyst at <a href="https://www.tabcorp.com.au">Tabcorp</a>, leading the Customer Loyalty Project, and as a Software Engineer at <a href="https://www.aristocrat.com">Aristocrat</a>, where I developed slot machine applications.</p>
+                    <p>Previously, I served as Senior Analytics Platform Owner, where I managed and optimised enterprise data science platforms including Databricks, RStudio Server, Python environments, and the Data Science Lab to support scalable analytics and ML delivery. Earlier in my career at ASIC, I worked as a Data Scientist, leading the development and implementation of NLP-based prospectus analysis solutions to extract insights and enhance large-scale document processing. Prior to this, I was a Data Scientist at the <a href="https://www.sydney.edu.au">University of Sydney's</a> <a href="https://www.sydney.edu.au/engineering/schools/school-computer-science.html">School of Computer Science</a>, where I developed a researcher collaboration recommendation system.</p>
+
+                    <p>Before transitioning into data science, I gained strong technical and business foundations as a Business Analyst at <a href="https://www.tabcorp.com.au">Tabcorp</a>, leading the Customer Loyalty Project, and as a Software Engineer at <a href="https://www.aristocrat.com">Aristocrat</a>, where I developed slot machine applications.</p>
 
                     <p><b>Education</b><br>
 
 					<p>I completed a Master of Research at <a href="https://www.mq.edu.au">Macquarie University</a> under the supervision of <a href="http://web.science.mq.edu.au/~diego/">Diego Molla-Aliod</a>, <a href="http://web.science.mq.edu.au/~rolfs/">Rolf Schwitter</a>, and <a href="https://researchers.mq.edu.au/en/persons/houying-zhu">Houying Zhu</a>, with a <a href="https://figshare.mq.edu.au/ndownloader/files/44817199">dissertation</a> focused on Bayesian statistics and natural language processing. Prior to this, I earned a Master of Data Science from the University of Sydney, where I collaborated with <a href="https://profiles.uts.edu.au/Roman.Marchant">Roman Marchant</a>, <a href="https://www.linkedin.com/in/sunchao/?originalSubdomain=au">Chao Sun</a>, and <a href="https://www.linkedin.com/in/philhenville/">Phil Henville</a> on my research <a href="papers/academic_capability_mapping.pdf">project</a>. I also hold a Master of Economics from the University of Sydney, as well as a Master’s in Information Technology and a Bachelor’s in Computer Science from the <a href="https://www.unsw.edu.au">University of New South Wales</a>.</p>
-
-                    <p><b>Research</b><br>
-                    <p>My research primarily focuses on Bayesian statistics as a framework for understanding causality, with a particular emphasis on unstructured data. I am interested in developing probabilistic models that can infer causal relationships.</p>
 
                     <div style="height: 50vh;"></div>
                 </div>
@@ -164,6 +200,10 @@
                 <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Doing-Bayesian-Data-Analysis-Tutorial/dp/0124058884">Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan </a> by John Kruschke</li>
                 <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Statistical-Rethinking-Bayesian-Course-Examples/dp/1482253445">Statistical Rethinking: A Bayesian Course with Examples in R and Stan </a> by Richard McElreath</li>
                 </ul>
+                <strong>Causal Inference</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here">Judea Pearl is widely considered the father of modern causal inference. While he did not coin the term itself, he made the subject accessible far beyond academia. His classic work, <a href="https://www.amazon.com.au/Book-Why-Science-Cause-Effect/dp/046509760X">The Book of Why: The New Science of Cause and Effect</a>, comes highly recommended.</li>
+                </ul>
                 <strong>Coastal Walks</strong><br/>
                 <ul>
                 <li class="paper" words="add, your, keywords, here">If you are looking to explore Sydney on foot, I highly recommend <a href="https://www.amazon.com.au/Sydneys-Best-Harbour-Coastal-Walks/dp/1925868621">Sydney's Best Harbour & Coastal Walks</a> by Katrina O'Brien, which features nearly 40 scenic trails.</li>
@@ -177,8 +217,16 @@
                 <li class="paper" words="add, your, keywords, here">I have transitioned through various careers from software engineer and database administrator to data scientist. <a href="https://www.amazon.com.au/What-Color-Your-Parachute-2021-ebook/dp/B08681HM8W/ref=sr_1_6?crid=1DHKTI7NDHCUS&dib=eyJ2IjoiMSJ9.2GcLP9v-CNDdyu3NY7k_602bsZy9ThXXBkbsu93a_QMAoCOtelfKEKQdep1z_RoLDXdpCGAGezKMTImVMpLuPz-26L0LSjM8VjXa8e-vXibeVoWwv2Zvc2UEuymhS6MzAxBU_Jw2W-LT2DXpZXNI70m0fW19gcLUpyeftbftbq4625zC3wSlNfrQrmt4VAh24c3ueMHrwSwt4QLbbdmAKZ-Ms4sHhG5IwHxrqQAuZ7o.l6GuGHJJsZdY3pJ1Qlf7k2orI9eomo--cQnRL7j912s&dib_tag=se&keywords=what+colour+is+your+parachute&qid=1741473860&s=books&sprefix=What+colour+is+your%2Cstripbooks%2C308&sr=1-6">What Color Is Your Parachute?</a> by Richard N. Bolles provides valuable insights for anyone looking to make a career change.</li>
                 </ul>
                 <strong>Psychology</strong><br/>
+                Life can be challenging at times, but simple practices like positive thinking and mindfulness meditation can go a long way in helping you find your calm.
                 <ul>
-                <li class="paper" words="add, your, keywords, here">I'm not a psychologist, but I found <a href="https://www.amazon.com.au/Courage-Disliked-Japanese-phenomenon-happiness-ebook/dp/B06XSGNN61">The Courage to be Disliked: The Japanese phenomenon that shows you how to free yourself, change your life and achieve real happiness</a> by Ichiro Kishimi and Fumitake Koga to be incredibly practical. It highlights how our perspective shapes our happiness and how changing the way we see the world can transform our lives.</li>
+                <li class="paper" words="add, your, keywords, here">I am not a psychologist, but I found <a href="https://www.amazon.com.au/Courage-Disliked-Japanese-phenomenon-happiness-ebook/dp/B06XSGNN61">The Courage to be Disliked: The Japanese phenomenon that shows you how to free yourself, change your life and achieve real happiness</a> by Ichiro Kishimi and Fumitake Koga to be incredibly practical. It highlights how our perspective shapes our happiness and how changing the way we see the world can transform our lives.</li>
+                <li class="paper" words="add, your, keywords, here">Self-sabotage happens when our conscious or unconscious mind creates barriers to our well-being, but fortunately, self-compassion can help us overcome it. <a href="https://www.amazon.com.au/Self-Compassion-Kristin-Neff/dp/0061733520">Self-Compassion: The Proven Power of Being Kind to Yourself</a> explores what self-compassion truly means.</li>
+                <li class="paper" words="add, your, keywords, here">These two books offer excellent guides on how mindfulness meditation can help manage life's pressures: <a href="https://www.amazon.com.au/Mindful-Way-Through-Depression-Unhappiness/dp/1462553923/ref=pd_lpo_d_sccl_2/355-2673922-5657263?pd_rd_w=Odsui&content-id=amzn1.sym.7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_p=7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_r=JHQ49WEXZPZMSSDBTAB8&pd_rd_wg=rKqyG&pd_rd_r=26e066ae-ea83-47ef-85f8-8f861efe9425&pd_rd_i=1462553923&psc=1">The Mindful Way through Depression, Second Edition: Freeing Yourself from Chronic Unhappiness</a> and <a href="https://www.amazon.com.au/Full-Catastrophe-Living-Revised-mindfulness/dp/0749958413/ref=pd_lpo_d_sccl_2/355-2673922-5657263?pd_rd_w=olzgE&content-id=amzn1.sym.7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_p=7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_r=TZT1XV8R5KZKZKRJW79C&pd_rd_wg=ZsdIm&pd_rd_r=5d34b450-4937-4a1b-a216-9b069d701252&pd_rd_i=0749958413&psc=1">Full Catastrophe Living, Revised Edition: How to cope with stress, pain and illness using mindfulness meditation</a>.</li>
+
+
+                <li class="paper" words="add, your, keywords, here">If anxiety or depression stems from lifelong patterns, I highly recommend reading these two books: <a href="https://www.amazon.com.au/Reinventing-Your-Life-Negative-Patterns/dp/0452272041">Reinventing Your Life</a> and <a href="https://www.amazon.com.au/Your-Coping-Skills-Arent-Working/dp/1648480993">Your Coping Skills Aren't Working</a>.</li>
+
+                </ul>
                 </ul>
                 <strong>Life Skills</strong><br/>
                 <ul>
@@ -188,7 +236,7 @@
             </div>
 
         </div>
-        <div style="height: 1000vh;"></div>
+        <div style="height: 100vh;"></div>
     Copyright &copy; 2019 - <script>document.write(new Date().getFullYear())</script> by King Tao Jason Ng
     </div>
     <!-- /.container -->
