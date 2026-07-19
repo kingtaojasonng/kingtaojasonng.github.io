@@ -13,12 +13,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         .image-frame {
@@ -27,6 +30,7 @@
             background-color: white;
             border-radius: 10px; /* Rounded corners */
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            margin-bottom: 20px;
         }
 
         .image-frame img {
@@ -36,11 +40,35 @@
             border-radius: 5px; /* Slightly rounded image corners */
         }
 
-        a i {
-          margin-right: 8px; 
+        /* Sidebar Link Formatting */
+        .sidebar-links {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .sidebar-links li {
+            margin-bottom: 10px;
+            font-size: 15px;
         }
 
-        /* Optional: If you want to give the email icon a specific color */
+        .sidebar-links a i {
+          margin-right: 8px; 
+          width: 20px;
+          text-align: center;
+        }
+
+        /* Layout Container Alignment Rules */
+        .navbar .container {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .my-custom-footer .navbar-text {
+            margin-left: 15px; 
+            margin-right: 15px;
+        }
+
+        /* Brand Icon Colors */
         .fa-envelope {
           color: #ea4335; /* A classic email/Gmail red */
         }
@@ -49,31 +77,28 @@
             color: #4285F4;
         }
 
-        /* GitHub Logo (Sleek Dark Gray/Black) */
         .fa-github {
             color: #24292e;
         }
 
-        /* LinkedIn Logo (Official LinkedIn Blue) */
         .fa-linkedin {
             color: #0077B5;
         }
     </style>
-
 </head>
 <body>
 
-
-<!-- Navigation -->
+    <!-- Header Navigation -->
 	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 	  <div class="container">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,6 +106,7 @@
 		  <ul class="nav navbar-nav">
 				  <li><a href="index.html">Home</a></li>
                   <li><a href="#publications">Publications</a></li>
+                  <li><a href="#teaching">Teaching</a></li>
 				  <li><a href="#ideas">Ideas & Inspirations</a></li> 
 				  <li><a href="resume/resume.pdf">CV</a></li> 
 		  </ul>
@@ -88,162 +114,157 @@
 	  </div>
 	</nav>
   
-  <!-- Page Content -->
+    <!-- Page Content Framework -->
     <div class="container">
-
         <div class="row">
 
-            <!-- Contact Info on the Sidebar -->
+            <!-- Contact Info Sidebar Column -->
             <div class="col-md-4">
-                <div style="font-family: 'Fira Sans', sans-serif; font-size: 32px;"><b>King Tao Jason Ng</b></div><br>
+                <div style="font-family: 'Fira Sans', sans-serif; font-size: 32px; font-weight: bold;">King Tao Jason Ng</div><br>
                 
                 <div class="image-frame">
                     <img src="images/jason.jpg" alt="My Personal Image">
                 </div>
-                <!--</div>-->
 
-                <!-- Links on the Sidebar -->
-                <!--<div class="col-md-4" style="margin-top:2%">-->
-                <dd>
-                    <a href="mailto:jason.kingtao.ng@gmail.com">
-                        <i class="fa-solid fa-envelope"></i> jason.kingtao.ng@gmail.com
-                    </a>
-                </dd>
-                <dd>
-                    <a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&amp;hl=en">
-                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
-                    </a>
-                </dd> 
-                <dd>
-                    <a href="https://github.com/kingtaojasonng">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </dd>
-                <dd>
-                    <a href="https://www.linkedin.com/in/jasonkng/">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                </dd>
+                <!-- Clean Semantic List Representation for Social Media Links -->
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="mailto:jason.kingtao.ng@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>jason.kingtao.ng@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com.au/citations?user=ypPt9h8AAAAJ&amp;hl=en">
+                            <i class="fa-brands fa-google-scholar"></i>Google Scholar
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="https://github.com/kingtaojasonng">
+                            <i class="fa-brands fa-github"></i>GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jasonkng/">
+                            <i class="fa-brands fa-linkedin"></i>LinkedIn
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 500vh;">
-                
-                <!-- Main Image -->
-                <!--<img class="img-responsive" src="photo.gif" alt=""><br>-->
+            <!-- Main Content Entries Column -->
+            <div class="col-md-8">
                 
                 <div style="margin-top:3%; text-align:justify;">
                     <h2 id="home">About Me</h2>
 
                     <p>Welcome! I am a Senior Data Scientist at <a href="https://asic.gov.au">ASIC</a>, specialising in machine learning and natural language processing applications.</p>
-
                     <p>My research primarily focuses on Bayesian statistics as a framework for understanding causality, with a particular emphasis on unstructured data. I am interested in developing probabilistic models that can infer causal relationships.</p>
 
-                    <p><b>Experience</b><br>
-
+                    <p><b>Experience</b></p>
                     <p>Previously, I served as Senior Analytics Platform Owner, where I managed and optimised enterprise data science platforms including Databricks, RStudio Server, Python environments, and the Data Science Lab to support scalable analytics and ML delivery. Earlier in my career at ASIC, I worked as a Data Scientist, leading the development and implementation of NLP-based prospectus analysis solutions to extract insights and enhance large-scale document processing. Prior to this, I was a Data Scientist at the <a href="https://www.sydney.edu.au">University of Sydney's</a> <a href="https://www.sydney.edu.au/engineering/schools/school-computer-science.html">School of Computer Science</a>, where I developed a researcher collaboration recommendation system.</p>
-
                     <p>Before transitioning into data science, I gained strong technical and business foundations as a Business Analyst at <a href="https://www.tabcorp.com.au">Tabcorp</a>, leading the Customer Loyalty Project, and as a Software Engineer at <a href="https://www.aristocrat.com">Aristocrat</a>, where I developed slot machine applications.</p>
 
-                    <p><b>Education</b><br>
-
+                    <p><b>Education</b></p>
 					<p>I completed a Master of Research at <a href="https://www.mq.edu.au">Macquarie University</a> under the supervision of <a href="http://web.science.mq.edu.au/~diego/">Diego Molla-Aliod</a>, <a href="http://web.science.mq.edu.au/~rolfs/">Rolf Schwitter</a>, and <a href="https://researchers.mq.edu.au/en/persons/houying-zhu">Houying Zhu</a>, with a <a href="https://figshare.mq.edu.au/ndownloader/files/44817199">dissertation</a> focused on Bayesian statistics and natural language processing. Prior to this, I earned a Master of Data Science from the University of Sydney, where I collaborated with <a href="https://profiles.uts.edu.au/Roman.Marchant">Roman Marchant</a>, <a href="https://www.linkedin.com/in/sunchao/?originalSubdomain=au">Chao Sun</a>, and <a href="https://www.linkedin.com/in/philhenville/">Phil Henville</a> on my research <a href="papers/academic_capability_mapping.pdf">project</a>. I also hold a Master of Economics from the University of Sydney, as well as a Master’s in Information Technology and a Bachelor’s in Computer Science from the <a href="https://www.unsw.edu.au">University of New South Wales</a>.</p>
-
-                    <div style="height: 50vh;"></div>
                 </div>
-            <!--/div>-->
-            
-            <!-- Publications -->
-            <!--<div class="col-md-8" style="height: 100vh;">-->
-                <h2 id="publications">Publications</h2>
-                
+
+                <!-- Publications Grid Section -->
+                <h2 id="publications" style="margin-top: 50px;">Publications</h2>
                 <strong>Conference Proceedings</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here"> 
-                    <strong>King Tao Jason Ng</strong> & Diego Moll&aacute;. Exploring Causal Directions through Word Occurrences: Semi-supervised Bayesian Classification Framework. The 21st Annual Workshop of the Australasian Language Technology Association, Melbourne, VIC, Australia, November 29 - December 1, 2023. [<a href="papers/2023.alta-1.4.pdf" target="_blank">Paper</a>] 
-                </li>
-                <li class="paper" words="add, your, keywords, here"> 
-                    Chao Sun, <strong>King Tao Jason Ng</strong>, Philip Henville & Roman Marchant. Hierarchical Word Mover Distance for Collaboration Recommender System. The 16th Australasian Data Mining Conference, AusDM 2018, Bathurst, NSW, Australia, November 28 - 30, 2018, Revised Selected Papers. [<a href="https://link.springer.com/chapter/10.1007/978-981-13-6661-1_23" target="_blank">Paper</a>] 
-                </li>
+                    <li class="paper"> 
+                        <strong>King Tao Jason Ng</strong> & Diego Moll&aacute;. Exploring Causal Directions through Word Occurrences: Semi-supervised Bayesian Classification Framework. The 21st Annual Workshop of the Australasian Language Technology Association, Melbourne, VIC, Australia, November 29 - December 1, 2023. [<a href="papers/2023.alta-1.4.pdf" target="_blank">Paper</a>] 
+                    </li>
+                    <li class="paper"> 
+                        Chao Sun, <strong>King Tao Jason Ng</strong>, Philip Henville & Roman Marchant. Hierarchical Word Mover Distance for Collaboration Recommender System. The 16th Australasian Data Mining Conference, AusDM 2018, Bathurst, NSW, Australia, November 28 - 30, 2018, Revised Selected Papers. [<a href="https://link.springer.com/chapter/10.1007/978-981-13-6661-1_23" target="_blank">Paper</a>] 
+                    </li>
                 </ul>
-                <div style="height: 100vh;"></div>
-                <!--
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-                -->
-            <!--</div>-->
 
-            <!-- Publications -->
-            <!--<div class="col-md-8" style="height: 100vh;">-->
-                <h2 id="ideas">Ideas & Inspirations</h2>
+                <!-- Teaching Grid Section -->
+                <h2 id="teaching" style="margin-top: 50px;">Teaching</h2>
+                <strong>Classes</strong><br/>
+                <ul>
+                    <li class="paper">
+                        <a href="https://coursehandbook.mq.edu.au/2022/units/COMP3220">COMP3220: Document Processing and Semantic Technologies</a>
+                        <p style="margin-top: 5px; color: #555;">Tutorial Semester 1, 2022</p>
+                    </li>
+                </ul>
+
+                <!-- Ideas & Inspirations Grid Section -->
+                <h2 id="ideas" style="margin-top: 50px;">Ideas & Inspirations</h2>
+                
                 <strong>Product Management</strong><br/>
                 Have you ever developed an application requested by the business, only to find it is never used after implementation? If so, I would recommend the following books to read:
                 <ul> 
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/INSPIRED-Create-Tech-Products-Customers-ebook/dp/B077NRB36N">Inspired: How to Create Tech Products Customers Love</a> by Marty Cagan</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Lean-Startup-Eric-Ries/dp/0307887898">The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a> by Eric Ries</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Crossing-Chasm-3rd-Geoffrey-Moore/dp/0062292986">Crossing the Chasm, 3rd Edition: Marketing and Selling Disruptive Products to Mainstream Customers</a> by Geoffrey A Moore</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Escaping-Build-Trap-Melissa-Perri/dp/149197379X">Escaping the Build Trap: How Effective Product Management Creates Real Value</a> by Melissa Perri</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Design-Everyday-Things-Revised-Expanded/dp/0465050654">The Design of Everyday Things</a> by Don Norman</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/INSPIRED-Create-Tech-Products-Customers-ebook/dp/B077NRB36N">Inspired: How to Create Tech Products Customers Love</a> by Marty Cagan</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Lean-Startup-Eric-Ries/dp/0307887898">The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a> by Eric Ries</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Crossing-Chasm-3rd-Geoffrey-Moore/dp/0062292986">Crossing the Chasm, 3rd Edition: Marketing and Selling Disruptive Products to Mainstream Customers</a> by Geoffrey A Moore</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Escaping-Build-Trap-Melissa-Perri/dp/149197379X">Escaping the Build Trap: How Effective Product Management Creates Real Value</a> by Melissa Perri</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Design-Everyday-Things-Revised-Expanded/dp/0465050654">The Design of Everyday Things</a> by Don Norman</li>
                 </ul>
+                
                 <strong>Bayesian Statistics</strong><br/>
                 I see myself primarily as a computer scientist, with some experience in data science, but not as a statistician. However, learning Bayesian statistics, from my perspective, can be challenging since many resources are geared toward trained statisticians. I have found the following materials to be particularly accessible:
                 <ul>
-                <li class="paper" words="add, your, keywords, here">This <a href="https://www.youtube.com/watch?v=GEFxFVESQXc">YouTube</a> video explains very clearly between Bayesian and Frequentist.</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Students-Guide-Bayesian-Statistics/dp/1473916364">A Student's Guide to Bayesian Statistics</a> by Ben Lambert. The author has created a series of <a href="https://www.youtube.com/watch?v=P_og8H-VkIY&list=PLwJRxp3blEvZ8AKMXOy0fc0cqT61GsKCG">YouTube</a> videos that complement the content of the book.</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Doing-Bayesian-Data-Analysis-Tutorial/dp/0124058884">Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan </a> by John Kruschke</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/Statistical-Rethinking-Bayesian-Course-Examples/dp/1482253445">Statistical Rethinking: A Bayesian Course with Examples in R and Stan </a> by Richard McElreath</li>
+                    <li class="paper">This <a href="https://www.youtube.com/watch?v=GEFxFVESQXc">YouTube</a> video explains very clearly between Bayesian and Frequentist.</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Students-Guide-Bayesian-Statistics/dp/1473916364">A Student's Guide to Bayesian Statistics</a> by Ben Lambert. The author has created a series of <a href="https://www.youtube.com/watch?v=P_og8H-VkIY&list=PLwJRxp3blEvZ8AKMXOy0fc0cqT61GsKCG">YouTube</a> videos that complement the content of the book.</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Doing-Bayesian-Data-Analysis-Tutorial/dp/0124058884">Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan </a> by John Kruschke</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Statistical-Rethinking-Bayesian-Course-Examples/dp/1482253445">Statistical Rethinking: A Bayesian Course with Examples in R and Stan </a> by Richard McElreath</li>
                 </ul>
+                
                 <strong>Causal Inference</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here">Judea Pearl is widely considered the father of modern causal inference. While he did not coin the term itself, he made the subject accessible far beyond academia. His classic work, <a href="https://www.amazon.com.au/Book-Why-Science-Cause-Effect/dp/046509760X">The Book of Why: The New Science of Cause and Effect</a>, comes highly recommended.</li>
+                    <li class="paper">Judea Pearl is widely considered the father of modern causal inference. While he did not coin the term itself, he made the subject accessible far beyond academia. His classic work, <a href="https://www.amazon.com.au/Book-Why-Science-Cause-Effect/dp/046509760X">The Book of Why: The New Science of Cause and Effect</a>, comes highly recommended.</li>
                 </ul>
+                
                 <strong>Coastal Walks</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here">If you are looking to explore Sydney on foot, I highly recommend <a href="https://www.amazon.com.au/Sydneys-Best-Harbour-Coastal-Walks/dp/1925868621">Sydney's Best Harbour & Coastal Walks</a> by Katrina O'Brien, which features nearly 40 scenic trails.</li>
+                    <li class="paper">If you are looking to explore Sydney on foot, I highly recommend <a href="https://www.amazon.com.au/Sydneys-Best-Harbour-Coastal-Walks/dp/1925868621">Sydney's Best Harbour & Coastal Walks</a> by Katrina O'Brien, which features nearly 40 scenic trails.</li>
                 </ul>
+                
                 <strong>Bias</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here">When I first learned statistics, I encountered the concept of bias, which has a precise mathematical definition. However, textbooks often mention terms like experiment bias or omitted variable bias without fully explaining how they arise. <a href="https://www.amazon.com.au/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a> by Daniel Kahneman delves into the psychological and cognitive processes behind bias, offering a deeper understanding of why it occurs.</li>
+                    <li class="paper">When I first learned statistics, I encountered the concept of bias, which has a precise mathematical definition. However, textbooks often mention terms like experiment bias or omitted variable bias without fully explaining how they arise. <a href="https://www.amazon.com.au/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a> by Daniel Kahneman delves into the psychological and cognitive processes behind bias, offering a deeper understanding of why it occurs.</li>
                 </ul>
+                
                 <strong>Job Hunters</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here">I have transitioned through various careers from software engineer and database administrator to data scientist. <a href="https://www.amazon.com.au/What-Color-Your-Parachute-2021-ebook/dp/B08681HM8W/ref=sr_1_6?crid=1DHKTI7NDHCUS&dib=eyJ2IjoiMSJ9.2GcLP9v-CNDdyu3NY7k_602bsZy9ThXXBkbsu93a_QMAoCOtelfKEKQdep1z_RoLDXdpCGAGezKMTImVMpLuPz-26L0LSjM8VjXa8e-vXibeVoWwv2Zvc2UEuymhS6MzAxBU_Jw2W-LT2DXpZXNI70m0fW19gcLUpyeftbftbq4625zC3wSlNfrQrmt4VAh24c3ueMHrwSwt4QLbbdmAKZ-Ms4sHhG5IwHxrqQAuZ7o.l6GuGHJJsZdY3pJ1Qlf7k2orI9eomo--cQnRL7j912s&dib_tag=se&keywords=what+colour+is+your+parachute&qid=1741473860&s=books&sprefix=What+colour+is+your%2Cstripbooks%2C308&sr=1-6">What Color Is Your Parachute?</a> by Richard N. Bolles provides valuable insights for anyone looking to make a career change.</li>
+                    <li class="paper">I have transitioned through various careers from software engineer and database administrator to data scientist. <a href="https://www.amazon.com.au/What-Color-Your-Parachute-2021-ebook/dp/B08681HM8W/">What Color Is Your Parachute?</a> by Richard N. Bolles provides valuable insights for anyone looking to make a career change.</li>
                 </ul>
+                
                 <strong>Psychology</strong><br/>
                 Life can be challenging at times, but simple practices like positive thinking and mindfulness meditation can go a long way in helping you find your calm.
                 <ul>
-                <li class="paper" words="add, your, keywords, here">I am not a psychologist, but I found <a href="https://www.amazon.com.au/Courage-Disliked-Japanese-phenomenon-happiness-ebook/dp/B06XSGNN61">The Courage to be Disliked: The Japanese phenomenon that shows you how to free yourself, change your life and achieve real happiness</a> by Ichiro Kishimi and Fumitake Koga to be incredibly practical. It highlights how our perspective shapes our happiness and how changing the way we see the world can transform our lives.</li>
-                <li class="paper" words="add, your, keywords, here">Self-sabotage happens when our conscious or unconscious mind creates barriers to our well-being, but fortunately, self-compassion can help us overcome it. <a href="https://www.amazon.com.au/Self-Compassion-Kristin-Neff/dp/0061733520">Self-Compassion: The Proven Power of Being Kind to Yourself</a> explores what self-compassion truly means.</li>
-                <li class="paper" words="add, your, keywords, here">These two books offer excellent guides on how mindfulness meditation can help manage life's pressures: <a href="https://www.amazon.com.au/Mindful-Way-Through-Depression-Unhappiness/dp/1462553923/ref=pd_lpo_d_sccl_2/355-2673922-5657263?pd_rd_w=Odsui&content-id=amzn1.sym.7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_p=7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_r=JHQ49WEXZPZMSSDBTAB8&pd_rd_wg=rKqyG&pd_rd_r=26e066ae-ea83-47ef-85f8-8f861efe9425&pd_rd_i=1462553923&psc=1">The Mindful Way through Depression, Second Edition: Freeing Yourself from Chronic Unhappiness</a> and <a href="https://www.amazon.com.au/Full-Catastrophe-Living-Revised-mindfulness/dp/0749958413/ref=pd_lpo_d_sccl_2/355-2673922-5657263?pd_rd_w=olzgE&content-id=amzn1.sym.7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_p=7ef4c059-30c9-4984-b131-e38134d0b653&pf_rd_r=TZT1XV8R5KZKZKRJW79C&pd_rd_wg=ZsdIm&pd_rd_r=5d34b450-4937-4a1b-a216-9b069d701252&pd_rd_i=0749958413&psc=1">Full Catastrophe Living, Revised Edition: How to cope with stress, pain and illness using mindfulness meditation</a>.</li>
-
-
-                <li class="paper" words="add, your, keywords, here">If anxiety or depression stems from lifelong patterns, I highly recommend reading these two books: <a href="https://www.amazon.com.au/Reinventing-Your-Life-Negative-Patterns/dp/0452272041">Reinventing Your Life</a> and <a href="https://www.amazon.com.au/Your-Coping-Skills-Arent-Working/dp/1648480993">Your Coping Skills Aren't Working</a>.</li>
-
+                    <li class="paper font-fix">I am not a psychologist, but I found <a href="https://www.amazon.com.au/Courage-Disliked-Japanese-phenomenon-happiness-ebook/dp/B06XSGNN61">The Courage to be Disliked</a> by Ichiro Kishimi and Fumitake Koga to be incredibly practical.</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/Self-Compassion-Kristin-Neff/dp/0061733520">Self-Compassion: The Proven Power of Being Kind to Yourself</a> explores what self-compassion truly means.</li>
+                    <li class="paper">These two books offer excellent guides on how mindfulness meditation can help manage life's pressures: <a href="https://www.amazon.com.au/Mindful-Way-Through-Depression-Unhappiness/dp/1462553923/">The Mindful Way through Depression</a> and <a href="https://www.amazon.com.au/Full-Catastrophe-Living-Revised-mindfulness/dp/0749958413/">Full Catastrophe Living</a>.</li>
+                    <li class="paper">If anxiety or depression stems from lifelong patterns, I highly recommend reading these two books: <a href="https://www.amazon.com.au/Reinventing-Your-Life-Negative-Patterns/dp/0452272041">Reinventing Your Life</a> and <a href="https://www.amazon.com.au/Your-Coping-Skills-Arent-Working/dp/1648480993">Your Coping Skills Aren't Working</a>.</li>
                 </ul>
-                </ul>
+                
                 <strong>Life Skills</strong><br/>
                 <ul>
-                <li class="paper" words="add, your, keywords, here">Communication, influence, and persuasion are essential skills, yet they are rarely taught in schools. <a href="https://www.amazon.com.au/How-Win-Friends-Influence-People/dp/0671027034">How to Win Friends & Influence People </a> by Dale Carnegie offers valuable insights to help you develop them.</li>
-                <li class="paper" words="add, your, keywords, here"><a href="https://www.amazon.com.au/7-Habits-Highly-Effective-People/dp/0743269519">7 Habits of Highly Effective People</a> by Stephen R Covey is a must-read for personal growth. If you could pick just one book from the list, this should be it.</li>
+                    <li class="paper">Communication, influence, and persuasion are essential skills, yet they are rarely taught in schools. <a href="https://www.amazon.com.au/How-Win-Friends-Influence-People/dp/0671027034">How to Win Friends & Influence People </a> by Dale Carnegie offers valuable insights to help you develop them.</li>
+                    <li class="paper"><a href="https://www.amazon.com.au/7-Habits-Highly-Effective-People/dp/0743269519">7 Habits of Highly Effective People</a> by Stephen R Covey is a must-read for personal growth.</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </div> <!-- Finished main body content column layout -->
+
+    <!-- Footer Panel outside the container wrapper to maintain symmetry with header -->
+    <nav class="navbar navbar-inverse navbar-static-top my-custom-footer" role="navigation" style="margin-top: 60px; margin-bottom: 20px;">
+        <div class="container"> 
+            <div class="collapse navbar-collapse" id="bs-footer-navbar-collapse">
+                <p class="navbar-text navbar-left">
+                    Copyright &copy; 2019 - <script>document.write(new Date().getFullYear())</script> by King Tao Jason Ng
+                </p>
+            </div>
+        </div> 
     </nav>
-    <p class="navbar-text navbar-left">
-        Copyright &copy; 2019 - <script>document.write(new Date().getFullYear())</script> by King Tao Jason Ng
-    </p>
-    <!-- /.container -->
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+
+    <!-- Right-aligned template credit line framework -->
+    <div class="container" style="margin-bottom: 30px;">
+        <a style="color:#b5bec9; font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    </div>
     
 </body>
-
 </html>
